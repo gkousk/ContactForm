@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_Vq1fhgLPrRE2VkPeZZdEL");
+        })();
+    </script>
+    <title>Contact form</title>
+</head>
+
+<body>
+    <main>
+        <p>Contact form</p>
+        <div class="contactForm">
+            <input type="text" id="name" placeholder="Full name">
+            <input type="email" id="mail" placeholder="Email">
+            <textarea name="message" id="msg" placeholder="Message"></textarea>
+            <button onclick='sendMail()' name="submit">Send Mail</button>
+        </div>
+
+    </main>
+</body>
+
+</html>
